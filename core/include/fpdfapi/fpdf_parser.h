@@ -401,7 +401,7 @@ class CPDF_Parser FX_FINAL : public IPDF_DocParser
 public:
 
     CPDF_Parser();
-    ~CPDF_Parser() override;
+    ~CPDF_Parser() FX_OVERRIDE;
 
     FX_DWORD			StartParse(FX_LPCSTR filename, FX_BOOL bReParse = FALSE);
 

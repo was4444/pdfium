@@ -271,7 +271,7 @@ class CFX_FileBufferArchive : public IFX_BufferArchive, public CFX_Object
 {
 public:
     CFX_FileBufferArchive(FX_STRSIZE size = 32768);
-    ~CFX_FileBufferArchive() override;
+    ~CFX_FileBufferArchive() FX_OVERRIDE;
     virtual void			Clear();
 
     FX_BOOL					AttachFile(IFX_StreamWrite *pFile, FX_BOOL bTakeover = FALSE);
